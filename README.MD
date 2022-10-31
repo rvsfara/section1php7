@@ -23,5 +23,6 @@ localhost ou 127.0.0.1
 
 
 HTTPD.CONF arquivo de configuração do Apache
+
 MySQL porta padrão é 3306
 
