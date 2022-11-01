@@ -24,10 +24,12 @@
     echo "<br/>";
     $frase = "A repetição é mãe da retenção.";
     $palavra = "mãe";
-    $q = strpos($frase, $palavra);
-    $texto = substr($frase, 0, $q);
+    $q = strpos($frase, $palavra);//primeiro o alvo depois o que procuramos
+    $texto = substr($frase, 0, $q);//alvo , a partir do inicio, até onde
     var_dump($texto);
-    $texto2 = substr($frase, $q + strlen($palavra), strlen($frase));
+    $texto2 = substr($frase, $q + strlen($palavra), strlen($frase));//alvo , indice, final
     echo "<br/>";
     var_dump($texto2);
+    echo "<br/>";
+    echo $texto . $palavra . $texto2;
 ?>
